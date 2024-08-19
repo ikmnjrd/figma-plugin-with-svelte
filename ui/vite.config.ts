@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite'
 import { viteSingleFile } from 'vite-plugin-singlefile'
-import react from '@vitejs/plugin-react'
+import { sveltePreprocess } from 'svelte-preprocess'
+import { svelte } from '@sveltejs/vite-plugin-svelte';
 import svgr from 'vite-plugin-svgr'
 
 /* 
@@ -12,8 +13,10 @@ export default defineConfig({
     root: './ui',
 
     plugins: [
-        // Enable working with React
-        react(),
+        // Enable working with Svelte
+        svelte({
+            preprocess: sveltePreprocess()
+        }),
 
         // Merge everything into a single file
         viteSingleFile(),
@@ -23,8 +26,6 @@ export default defineConfig({
     ],
 
     build: {
-
-        // Target the 
         target: 'es6',
 
         // Specify the output folder and ask to rewrite upon each compilation

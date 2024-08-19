@@ -15,16 +15,16 @@
         "resolveJsonModule": true,
         "isolatedModules": true,
         "noEmit": true,
-        "jsx": "react-jsx",
+        // "jsx": "react-jsx",
+        "types": ["svelte"],
         /* Linting */
         "strict": true,
         "noUnusedLocals": true,
         "noUnusedParameters": true,
-        "noFallthroughCasesInSwitch": true
+        "noFallthroughCasesInSwitch": true,
+        "verbatimModuleSyntax": true,
     },
-    "include": [
-        "."
-    ],
+    "include": ["./main.ts"],
     "references": [
         {
             "path": "./tsconfig.node.json"
