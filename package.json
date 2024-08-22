@@ -2,6 +2,7 @@
   "name": "figma-plugin-name",
   "version": "0.0.0",
   "description": "Figma Plugin Description",
+  "type": "module",
   "scripts": {
     "clean": "rimraf ./dist",
     "prebuild": "npm-run-all -p clean typecheck",
