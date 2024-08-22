@@ -1,7 +1,7 @@
 <script lang="ts">
-    let count: any = 3
+  let count = 3
 </script>
 
 <div>
-    { count }
+  {count}
 </div>

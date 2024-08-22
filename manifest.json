@@ -1,18 +1,18 @@
 {
-    "name": "Plugin Name",
-    "id": "000000000000000000",
-    "api": "1.0.0",
-    "editorType": ["figma", "figjam"],
-    "main": "dist/plugin/index.js",
-    "ui": "dist/ui/index.html",
-    "menu": [
-        {
-            "name": "Plugin Command",
-            "command": "plugin-command"
-        },
-        {
-            "name": "Plugin Command With UI",
-            "command": "plugin-command-with-ui"
-        }
-    ]
+  "name": "Plugin Name",
+  "id": "000000000000000000",
+  "api": "1.0.0",
+  "editorType": ["figma", "figjam"],
+  "main": "dist/plugin/index.js",
+  "ui": "dist/ui/index.html",
+  "menu": [
+    {
+      "name": "Plugin Command",
+      "command": "plugin-command"
+    },
+    {
+      "name": "Plugin Command With UI",
+      "command": "plugin-command-with-ui"
+    }
+  ]
 }
